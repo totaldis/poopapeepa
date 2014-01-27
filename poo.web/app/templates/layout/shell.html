@@ -1,0 +1,11 @@
+﻿<div data-ng-controller="shell as vm">
+    <h1>SHELL {{1 + 1}}</h1>
+
+    <section id="content">
+        <div style="position: absolute; top: 50px" data-ng-show="vm.isBusy">
+            <div data-ng-include="'/app/templates/layout/loader.html'"></div>
+        </div>
+        <div data-ng-view></div> 
+    </section>
+
+</div>

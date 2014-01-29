@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8BD002F9-FF9C-4FB2-8265-C050F6E00C59}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{D03F4616-2638-48BA-A42F-1B17CA0CD0B2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>poo.data</RootNamespace>
-    <AssemblyName>poo.data</AssemblyName>
+    <RootNamespace>poo.console</RootNamespace>
+    <AssemblyName>poo.console</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -46,8 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="PooContext.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +56,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\poo.data\poo.data.csproj">
+      <Project>{8bd002f9-ff9c-4fb2-8265-c050f6e00c59}</Project>
+      <Name>poo.data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\poo.domain\poo.domain.csproj">
       <Project>{539acd4b-29d9-4ec5-8665-925ff01410dc}</Project>
       <Name>poo.domain</Name>

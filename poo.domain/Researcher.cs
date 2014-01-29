@@ -10,6 +10,7 @@ namespace poo.domain
     {
         private ICollection<Photo> _photos;
         private ICollection<Document> _documents;
+        private ICollection<Lab> _labs;
 
         public Researcher()
         {
@@ -18,7 +19,7 @@ namespace poo.domain
         }
 
         public int Id { get; set; } // id of researcher
-        public string UserName { get; set; } // user name of researcher
+        public string Name { get; set; } // user name of researcher
         public int? Age { get; set; } // age of researcher
         public string ImageURL { get; set; } // location of image
 
@@ -34,14 +35,10 @@ namespace poo.domain
             set { _documents = value; }
         }
 
-        public int PhotoCount
+        public virtual ICollection<Lab> Labs
         {
-            get { return _photos.Count; }
-        }
-
-        public int DocumentCount
-        {
-            get { return _documents.Count; }
+            get { return _labs; }
+            set { _labs = value; }
         }
     }
 }

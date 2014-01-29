@@ -17,5 +17,11 @@ namespace poo.data
         public DbSet<Lab> Labs { get; set; }
         public DbSet<Researcher> Researchers { get; set; }
         // public DbSet<Communication> Communications { get; set; } --- not yet
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }

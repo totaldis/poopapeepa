@@ -20,7 +20,8 @@ namespace poo.data.Migrations
             var researchers = new List<Researcher>
             {
                 new Researcher{ Name = "Uncle Bo", Age = 32, ImageURL = "http://pickaface.net/avatar/DistantSecond52e82781af0d6.png" },
-                new Researcher{ Name = "Madison", Age = 9 }
+                new Researcher{ Name = "Madison", Age = 9 },
+                new Researcher{ Name = "Reese", Age = 10 }
             };
 
             context.Researchers.AddOrUpdate(r=> r.Name, researchers.ToArray());

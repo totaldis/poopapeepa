@@ -27,6 +27,7 @@ namespace poo.console
                 foreach (var r in researchers)
                 {
                     Console.WriteLine(r.Name);
+                    Console.ReadKey();
                 }
             }
         }

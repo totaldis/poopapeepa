@@ -8,6 +8,8 @@ namespace poo.domain
 {
     public enum Priority
     {
-        NotImportant, Important, VeryImportant
+        NotImportant = 1, 
+        Important = 2, 
+        VeryImportant = 3
     }
 }

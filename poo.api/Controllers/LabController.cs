@@ -4,9 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Breeze;
+using Breeze.WebApi2;
 
 namespace poo.api.Controllers
 {
+    [BreezeController]
     public class LabController : ApiController
     {
         // GET api/<controller>

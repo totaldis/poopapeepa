@@ -1,4 +1,5 @@
-﻿using System;
+﻿using poo.api.ninject;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,7 +22,7 @@ namespace poo.api
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            NinjectHttpContainer.RegisterModules(NinjectHttpModules.Modules);
         }
     }
 }

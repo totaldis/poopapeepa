@@ -10,9 +10,15 @@
 
 
         var service = {
-
+            getResearchers: getResearchers
         };
 
         return service;
+
+        function getResearchers() {
+            var researchers = [
+                { }
+            ]
+        }
     }
 })();

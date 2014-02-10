@@ -21,12 +21,8 @@
                 });
         }
 
-        function getMenuItems() {
-            return true;
-        }
+        function getLists() {
 
-        function getTasks() {
-            return true;
         }
     }
 })();

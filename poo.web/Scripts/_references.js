@@ -4,3 +4,6 @@
 /// <reference path="bootstrap.js" />
 /// <reference path="breeze.angular.q.js" />
 /// <reference path="toastr.js" />
+/// <reference path="../app/core/core.js" />
+/// <reference path="../app/services/datacontext.js" />
+/// <reference path="breeze.min.js" />

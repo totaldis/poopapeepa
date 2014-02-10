@@ -17,6 +17,6 @@
     app.run(['$route', '$rootScope', '$q', 'use$q', 'datacontext',
         function ($route, $rootScope, $q, use$q, datacontext) {
             use$q($q);
-            //datacontext.prime();
+            datacontext.primeApp();
         }]);
 })();

@@ -8,7 +8,7 @@
         breeze.config.initializeAdapterInstance('modelLibrary', 'backingStore', true);
         //breeze.NamingConvention.camelCase.setAsDefault();
 
-        var serviceName = config.remoteServiceName;
+        var serviceName = config.serviceName;
         var metadataStore = new breeze.MetadataStore();
 
         var provider = {

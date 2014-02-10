@@ -6,6 +6,8 @@ using System.Web.Http.Dependencies;
 using Ninject.Modules;
 using Ninject;
 using System.Web.Http;
+using poo.api.Repositorys.Contracts;
+using poo.api.Repositorys;
 
 namespace poo.api.ninject
 {
@@ -53,7 +55,7 @@ namespace poo.api.ninject
             public override void Load()
             {
                 // Bind your repositories here
-                // Bind<IRepo>().To<Repo>();
+                Bind<IEntitiesRepository>().To<EntitiesRepository>();
             }
         }
     }

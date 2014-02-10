@@ -2,13 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace poo.api
 {
     public static class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
-        {
+        {   
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
+
+            config.Routes.MapHttpRoute(
+                name: "BreezeApi",
+                routeTemplate: "breeze/{controller}/{action}"
+            );
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

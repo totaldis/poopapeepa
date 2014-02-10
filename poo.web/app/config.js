@@ -5,7 +5,7 @@
 
     var app = angular.module('app');
 
-    var breezeApiName = 'http://localhost:1526/breeze/data';
+    var breezeApiName = 'http://localhost:1969/breeze/core';
 
     var events = {
         controllerActivateSuccess: 'controller.activateSuccess'

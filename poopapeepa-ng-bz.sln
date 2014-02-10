@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poo.data", "poo.data\poo.da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poo.console", "poo.console\poo.console.csproj", "{D03F4616-2638-48BA-A42F-1B17CA0CD0B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poo.data.contracts", "poo.data.contracts\poo.data.contracts.csproj", "{BA669ECA-29FD-4F5E-962E-8A48E65B1E59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poo.api.test", "poo.api.test\poo.api.test.csproj", "{AA436B11-7A16-4044-8B75-E336B54E5E9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{D03F4616-2638-48BA-A42F-1B17CA0CD0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D03F4616-2638-48BA-A42F-1B17CA0CD0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D03F4616-2638-48BA-A42F-1B17CA0CD0B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA669ECA-29FD-4F5E-962E-8A48E65B1E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA669ECA-29FD-4F5E-962E-8A48E65B1E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA669ECA-29FD-4F5E-962E-8A48E65B1E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA669ECA-29FD-4F5E-962E-8A48E65B1E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA436B11-7A16-4044-8B75-E336B54E5E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA436B11-7A16-4044-8B75-E336B54E5E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA436B11-7A16-4044-8B75-E336B54E5E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA436B11-7A16-4044-8B75-E336B54E5E9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

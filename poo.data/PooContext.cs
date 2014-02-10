@@ -10,7 +10,10 @@ namespace poo.data
 {
     public class PooContext : DbContext
     {
-        public PooContext() : base("PooDb") { } // Set database name
+        public PooContext() : base("PooDb") 
+        {
+            //Database.SetInitializer(new DropCreateDatabaseAlways<PooContext>());
+        } // Set database name
 
         public DbSet<Document> Documents { get; set; }
         public DbSet<Photo> Photos { get; set; }
